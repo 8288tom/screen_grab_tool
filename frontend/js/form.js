@@ -2,7 +2,7 @@ const form = document.getElementById("captureForm");
 const link = document.getElementById("videoLink");
 const times = document.getElementById("times");
 const submitButton = document.getElementById("submitButton");
-const sendUrl = "/screen_grab_tool/capture_and_download";
+const sendUrl = "http://127.0.0.1:5174/screen_grab_tool/capture_and_download";
 
 form.addEventListener("submit", (e) => {
     e.preventDefault();

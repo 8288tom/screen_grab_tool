@@ -6,6 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Screen Grab Tool</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="./css/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./css/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./css/favicons/favicon-16x16.png">
+    <link rel="manifest" href="./css/favicons/site.webmanifest">
+    <link rel="mask-icon" href="./css/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -29,8 +36,8 @@
                     <div class="input-field">
                         <label class="blue-text text-lighten-2" for="times">Timings</label>
                         <input type="text" id="times" name="times" class="validate" placeholder="00:03,00:38,01:30"
-                            required pattern="^(\s*\d{2}\s*:\s*\d{2}\s*,\s?)*\s*\d{2}\s*:\s*\d{2}\s*$" required
-                            title="Enter timings in the format 00:03, 00:15, 00:01">
+                            required pattern="^\d{2}:\d{2}(,\d{2}:\d{2})*$" required
+                            title="Enter timings in the format:00:03,00:15,00:01">
                     </div>
                 </div>
                 <div class="col s3">
@@ -38,7 +45,6 @@
                         class="btn grey-text text-darken-3 center-align accent-3 waves-effect waves-teal hoverable">
                         Capture<i class="material-icons left">camera_alt</i>
                     </button>
-
                 </div>
             </form>
         </div>
